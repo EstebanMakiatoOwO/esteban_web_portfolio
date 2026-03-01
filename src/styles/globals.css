@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Accent — muted emerald green */
+  --color-accent-50: #ecfdf5;
+  --color-accent-100: #d1fae5;
+  --color-accent-200: #a7f3d0;
+  --color-accent-300: #6ee7b7;
+  --color-accent-400: #34d399;
+  --color-accent-500: #10b981;
+  --color-accent-600: #059669;
+  --color-accent-700: #047857;
+  --color-accent-800: #065f46;
+  --color-accent-900: #064e3b;
+
+  /* Surface — deep dark slate */
+  --color-surface-950: #0B0F14;
+  --color-surface-900: #0d1117;
+  --color-surface-800: #131920;
+  --color-surface-700: #1b2332;
+  --color-surface-600: #242d3d;
+
+  /* Muted text tones */
+  --color-muted-400: #6b7b8d;
+  --color-muted-300: #8b99a8;
+  --color-muted-200: #a8b5c4;
+}
+
+/* Star Border animation keyframes */
+@keyframes star-movement-bottom {
+  0% { transform: translate(0%, 0%); opacity: 1; }
+  100% { transform: translate(-100%, 0%); opacity: 0; }
+}
+@keyframes star-movement-top {
+  0% { transform: translate(0%, 0%); opacity: 1; }
+  100% { transform: translate(100%, 0%); opacity: 0; }
+}
+
+@utility animate-star-movement-bottom {
+  animation: star-movement-bottom linear infinite alternate;
+}
+@utility animate-star-movement-top {
+  animation: star-movement-top linear infinite alternate;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-950 text-muted-300 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent-500/20 text-white;
+  }
+}
