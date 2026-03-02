@@ -6,9 +6,9 @@ import { FadeIn } from "@shared/ui/motion";
 import { ShinyText } from "@shared/ui/react-bits";
 import { MapPin, Mail, Send, CheckCircle, AlertCircle } from "lucide-react";
 
-const EMAILJS_SERVICE_ID = "service_1wecvrj";
-const EMAILJS_TEMPLATE_ID = "template_ps01sux";
-const EMAILJS_PUBLIC_KEY = "lYnETSdNhVTqjhj9N";
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 type FormStatus = "idle" | "sending" | "success" | "error";
 

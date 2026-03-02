@@ -8,7 +8,7 @@ export const projects: Project[] = [
       "Crypto trading web app with real-time market discovery, portfolio tracking, and advanced charting tools.",
     tags: ["React", "TailwindCSS", "Prisma", "Axios"],
     status: "Deployed",
-    imageUrl: "https://image.thum.io/get/width/800/crop/500/https://www.seer.trade/discover",
+    imageUrl: "/projects/seer-trade.png",
     liveUrl: "https://www.seer.trade/discover",
   },
   {
@@ -18,7 +18,7 @@ export const projects: Project[] = [
       "Mobile-first digital payments platform for events — bars, restaurants, and concerts. Seamless checkout experience.",
     tags: ["React", "TailwindCSS", "Axios", "PWA"],
     status: "Deployed",
-    imageUrl: "https://image.thum.io/get/width/800/crop/500/https://monii.app/",
+    imageUrl: "/projects/monii.png",
     liveUrl: "https://monii.app/",
   },
   {
@@ -28,7 +28,7 @@ export const projects: Project[] = [
       "Blog platform with admin panel and Supabase backend for content management. Rich reading experience with clean typography.",
     tags: ["React", "TailwindCSS", "Supabase", "Admin Panel"],
     status: "Deployed",
-    imageUrl: "https://image.thum.io/get/width/800/crop/500/https://xilesdemiabuela.com/",
+    imageUrl: "/projects/xiles.png",
     liveUrl: "https://xilesdemiabuela.com/",
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "Professional portfolio for dancer Valeria Vega Solorzano. Multi-section informational site with smooth animations.",
     tags: ["React", "TailwindCSS", "Responsive", "Animation"],
     status: "Deployed",
-    imageUrl: "https://image.thum.io/get/width/800/crop/500/https://valeriavegadanza.com/",
+    imageUrl: "/projects/valeria-vega.png",
     liveUrl: "https://valeriavegadanza.com/",
   },
 ];
