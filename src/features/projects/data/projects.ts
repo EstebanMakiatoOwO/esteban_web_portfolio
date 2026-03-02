@@ -1,5 +1,7 @@
 import type { Project } from "@shared/types";
 
+const base = import.meta.env.BASE_URL;
+
 export const projects: Project[] = [
   {
     id: "seer-trade",
@@ -8,7 +10,7 @@ export const projects: Project[] = [
       "Crypto trading web app with real-time market discovery, portfolio tracking, and advanced charting tools.",
     tags: ["React", "TailwindCSS", "Prisma", "Axios"],
     status: "Deployed",
-    imageUrl: "/projects/seer-trade.png",
+    imageUrl: `${base}projects/seer-trade.png`,
     liveUrl: "https://www.seer.trade/discover",
   },
   {
@@ -18,7 +20,7 @@ export const projects: Project[] = [
       "Mobile-first digital payments platform for events — bars, restaurants, and concerts. Seamless checkout experience.",
     tags: ["React", "TailwindCSS", "Axios", "PWA"],
     status: "Deployed",
-    imageUrl: "/projects/monii.png",
+    imageUrl: `${base}projects/monii.png`,
     liveUrl: "https://monii.app/",
   },
   {
@@ -28,7 +30,7 @@ export const projects: Project[] = [
       "Blog platform with admin panel and Supabase backend for content management. Rich reading experience with clean typography.",
     tags: ["React", "TailwindCSS", "Supabase", "Admin Panel"],
     status: "Deployed",
-    imageUrl: "/projects/xiles.png",
+    imageUrl: `${base}projects/xiles.png`,
     liveUrl: "https://xilesdemiabuela.com/",
   },
   {
@@ -38,7 +40,7 @@ export const projects: Project[] = [
       "Professional portfolio for dancer Valeria Vega Solorzano. Multi-section informational site with smooth animations.",
     tags: ["React", "TailwindCSS", "Responsive", "Animation"],
     status: "Deployed",
-    imageUrl: "/projects/valeria-vega.png",
+    imageUrl: `${base}projects/valeria-vega.png`,
     liveUrl: "https://valeriavegadanza.com/",
   },
 ];
